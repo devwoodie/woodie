@@ -1,0 +1,12 @@
+h1{
+  //color: #fff;
+  font-size: 50px;
+  padding: 50px;
+  -webkit-text-stroke: 1px #fff;
+  &.a{
+    font-family: "BlackHanSans";
+  }
+  &.b{
+    font-family: "RixInooAriDuri";
+  }
+}
