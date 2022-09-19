@@ -1,12 +1,63 @@
-h1{
-  //color: #fff;
-  font-size: 50px;
-  padding: 50px;
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.inner{
+  padding: 0 4vw;
+}
+.mode{
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  .mode-icon{
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+.nav-tab{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000;
+  position: fixed;
+  left: 50%; bottom: 2rem;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  .tab{
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 7px; padding: 15px;
+    border-radius: 50px;
+    letter-spacing: -.5px;
+    &.active{
+      background: #fff;
+      color: #000;
+    }
+  }
+}
+.content{
+  padding: 10vw 0;
+}
+.woodie{
+  font-family: "BlackHanSans";
+  font-size: 140px;
+}
+.my-name{
+  font-family: "BlackHanSans";
   -webkit-text-stroke: 1px #fff;
-  &.a{
-    font-family: "BlackHanSans";
-  }
-  &.b{
-    font-family: "RixInooAriDuri";
-  }
+  -webkit-text-fill-color: #1a1a1a;
+  font-size: 130px;
+  text-align: right;
+}
+
+.a{
+  font-family: "BlackHanSans";
+}
+.b{
+  font-family: "RixInooAriDuri";
 }
