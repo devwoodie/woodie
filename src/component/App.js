@@ -2,6 +2,7 @@ import '../css/reset.css';
 import '../css/App.scss';
 import { BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 import {useCallback, useState} from "react";
+import { Routes, Route, Link } from "react-router-dom";
 
 const App = () => {
 
@@ -33,6 +34,12 @@ const App = () => {
                 <h1 className="woodie">WOODIE</h1>
                 <h2 className="my-name">YU<br/>DONG WOO</h2>
             </div>
+            <Routes>
+                <Route path="/about" element={<div>about</div>}/>
+                <Route />
+                <Route />
+                <Route />
+            </Routes>
             <ul className="nav-tab">
                 <li className="tab active">INTRO</li>
                 <li className="tab">ABOUT</li>

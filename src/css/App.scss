@@ -35,7 +35,7 @@ body{
     border-radius: 50px;
     letter-spacing: -.5px;
     &.active{
-      background: #fff;
+      background: var(--back-white);
       color: #000;
     }
   }
@@ -45,13 +45,13 @@ body{
 }
 .woodie{
   font-family: "BlackHanSans";
-  font-size: 140px;
+  font-size: 10rem;
 }
 .my-name{
   font-family: "BlackHanSans";
-  -webkit-text-stroke: 1px #fff;
-  -webkit-text-fill-color: #1a1a1a;
-  font-size: 130px;
+  -webkit-text-stroke: 1px var(--back-white);
+  -webkit-text-fill-color: var(--back-black);
+  font-size: 10rem;
   text-align: right;
 }
 

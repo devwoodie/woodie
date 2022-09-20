@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background: #1a1a1a;
+    background: var(--back-black);
 }
 ol, ul {
     list-style: none;
@@ -45,6 +45,10 @@ table {
 *{
     font-size: 16px;
     color: #fff;
+}
+:root{
+    --back-black: #1a1a1a;
+    --back-white: #ffffff;
 }
 
 @font-face {
