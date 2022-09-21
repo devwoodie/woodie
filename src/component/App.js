@@ -36,8 +36,8 @@ const App = () => {
             </div>
             <Routes>
                 <Route path="/about" element={<div>about</div>}/>
-                <Route />
-                <Route />
+                <Route path="/projects" element={<div>PROJECTS</div>}/>
+                <Route path="/contact" element={<div>CONTACT</div>}/>
                 <Route />
             </Routes>
             <ul className="nav-tab">
