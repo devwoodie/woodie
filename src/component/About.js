@@ -23,10 +23,6 @@ const About = () => {
                     <span className="info-tit">Bachelor Degree.</span>
                     <span className="info-cont">Korea National Open Univ. Computer Science (2022.08 ~ now)</span>
                 </li>
-                <li className="info-list">
-                    <span className="info-tit">Email.</span>
-                    <span className="info-cont">ehddl453@naver.com</span>
-                </li>
             </ul>
         </div>
     )
