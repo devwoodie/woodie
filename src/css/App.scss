@@ -13,9 +13,11 @@ body{
   display: flex;
   align-items: flex-start;
   cursor: pointer;
+  color: var(--back-white);
   .mode-icon{
     font-size: 14px;
     margin-right: 5px;
+    color: inherit;
   }
 }
 .nav-tab{
@@ -34,8 +36,9 @@ body{
     margin: 7px; padding: 15px;
     border-radius: 50px;
     letter-spacing: -.5px;
+    color: #fff;
     &.active{
-      background: var(--back-white);
+      background: #fff;
       color: #000;
     }
   }
@@ -46,6 +49,7 @@ body{
 .woodie{
   font-family: "BlackHanSans";
   font-size: 10rem;
+  color: var(--back-white);
 }
 .my-name{
   font-family: "BlackHanSans";

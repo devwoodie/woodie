@@ -1,18 +1,25 @@
 import '../css/reset.css';
 import '../css/App.scss';
+import Intro from "./Intro";
 import { BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 import {useCallback, useState} from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate, outlet } from "react-router-dom";
 
 const App = () => {
 
+    let navigate = useNavigate()
     let [mode, setMode] = useState(false);
+    let [pageIndex, setPageIndex] = useState(0);
+    const htmlTag = document.querySelector('html');
 
     //모드 변경 false=dark / true=light
     const modeChange = useCallback(() => {
         if(mode === false){
+            htmlTag.classList.add('light');
             return setMode(true);
+
         }else{
+            htmlTag.classList.remove('light');
             return setMode(false);
         };
     },[mode]);
@@ -30,21 +37,19 @@ const App = () => {
                         LIGHT MODE
                     </span> }
             </div>
-            <div className="content">
-                <h1 className="woodie">WOODIE</h1>
-                <h2 className="my-name">YU<br/>DONG WOO</h2>
-            </div>
+
             <Routes>
-                <Route path="/about" element={<div>about</div>}/>
+                <Route path="/" element={<Intro />}/>
+                <Route path="/about" element={<div>ABOUT</div>}/>
                 <Route path="/projects" element={<div>PROJECTS</div>}/>
                 <Route path="/contact" element={<div>CONTACT</div>}/>
-                <Route />
             </Routes>
+
             <ul className="nav-tab">
-                <li className="tab active">INTRO</li>
-                <li className="tab">ABOUT</li>
-                <li className="tab">PROJECTS</li>
-                <li className="tab">CONTACT</li>
+                <li onClick={() => {navigate('/');setPageIndex(0);}} className={pageIndex === 0 ? 'tab active' : 'tab'}>INTRO</li>
+                <li onClick={() => {navigate('/about') ;setPageIndex(1);}} className={pageIndex === 1 ? 'tab active' : 'tab'}>ABOUT</li>
+                <li onClick={() => {navigate('/projects') ;setPageIndex(2);}} className={pageIndex === 2 ? 'tab active' : 'tab'}>PROJECTS</li>
+                <li onClick={() => {navigate('/contact') ;setPageIndex(3);}} className={pageIndex === 3 ? 'tab active' : 'tab'}>CONTACT</li>
             </ul>
         </div>
     );

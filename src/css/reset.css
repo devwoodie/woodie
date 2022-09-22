@@ -42,13 +42,21 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
 *{
     font-size: 16px;
-    color: #fff;
+    color: var(--back-white);
 }
 :root{
     --back-black: #1a1a1a;
     --back-white: #ffffff;
+}
+.light:root{
+    --back-black: #ffffff;
+    --back-white: #1a1a1a;
 }
 
 @font-face {
