@@ -8,22 +8,26 @@
     {
       "id" : 1,
       "title" : "Birth.",
-      "cont" : "ehddl453@naver.com"
+      "cont" : "1995.11.18"
     },
     {
       "id" : 2,
       "title" : "Residence.",
-      "cont" : "ehddl453@naver.com"
+      "cont" : "Gyeonggi-do, South Korea"
     },
     {
       "id" : 3,
       "title" : "Bachelor Degree.",
-      "cont" : "ehddl453@naver.com"
+      "cont" : "Korea National Open Univ. Computer Science (2022.08 ~ )"
+    }
+  ],
+  "career" : [
+    {
+      "title" : "Samsung Welstory (2018.02 ~ 2021.03)",
+      "sub" : ""
     },
     {
-      "id" : 4,
-      "title" : "Email.",
-      "cont" : "ehddl453@naver.com"
+      "title" : "eMoney (2022.02 ~ )"
     }
   ]
 }

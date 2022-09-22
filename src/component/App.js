@@ -1,5 +1,6 @@
 import '../css/reset.css';
 import '../css/App.scss';
+import infoJson from '../json/Info.json';
 import Intro from "./Intro";
 import About from "./About";
 import Contact from "./Contact";
@@ -19,7 +20,6 @@ const App = () => {
         if(mode === false){
             htmlTag.classList.add('light');
             return setMode(true);
-
         }else{
             htmlTag.classList.remove('light');
             return setMode(false);
@@ -42,7 +42,7 @@ const App = () => {
 
             <Routes>
                 <Route path="/" element={<Intro />}/>
-                <Route path="/about" element={<About />}/>
+                <Route path="/about" element={<About infoJson={infoJson} />}/>
                 <Route path="/projects" element={<div>PROJECTS</div>}/>
                 <Route path="/contact" element={<Contact />}/>
             </Routes>
