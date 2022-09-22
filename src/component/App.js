@@ -1,6 +1,7 @@
 import '../css/reset.css';
 import '../css/App.scss';
 import Intro from "./Intro";
+import Contact from "./Contact";
 import { BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 import {useCallback, useState} from "react";
 import { Routes, Route, Link, useNavigate, outlet } from "react-router-dom";
@@ -42,7 +43,7 @@ const App = () => {
                 <Route path="/" element={<Intro />}/>
                 <Route path="/about" element={<div>ABOUT</div>}/>
                 <Route path="/projects" element={<div>PROJECTS</div>}/>
-                <Route path="/contact" element={<div>CONTACT</div>}/>
+                <Route path="/contact" element={<Contact />}/>
             </Routes>
 
             <ul className="nav-tab">
