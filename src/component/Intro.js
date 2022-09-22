@@ -1,3 +1,5 @@
+import '../css/Into.scss';
+
 const Intro = () => {
     return(
         <div className="content">
