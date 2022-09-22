@@ -1,0 +1,21 @@
+.About{
+  margin-top: 5rem;
+  .info{
+    .info-list{
+      font-size: 1.2rem;
+      margin-top: 15px;
+      &:first-child{
+        margin: 0;
+      }
+      .info-tit{
+        font-size: inherit;
+        font-weight: 500;
+        margin-right: 15px;
+      }
+      .info-cont{
+        font-size: inherit;
+        font-weight: 300;
+      }
+    }
+  }
+}

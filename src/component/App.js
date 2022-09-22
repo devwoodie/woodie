@@ -1,6 +1,7 @@
 import '../css/reset.css';
 import '../css/App.scss';
 import Intro from "./Intro";
+import About from "./About";
 import Contact from "./Contact";
 import { BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 import {useCallback, useState} from "react";
@@ -41,7 +42,7 @@ const App = () => {
 
             <Routes>
                 <Route path="/" element={<Intro />}/>
-                <Route path="/about" element={<div>ABOUT</div>}/>
+                <Route path="/about" element={<About />}/>
                 <Route path="/projects" element={<div>PROJECTS</div>}/>
                 <Route path="/contact" element={<Contact />}/>
             </Routes>
