@@ -24,7 +24,7 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #000;
+  background: var(--nav-black);
   position: fixed;
   left: 50%; bottom: 2rem;
   transform: translateX(-50%);
@@ -36,10 +36,10 @@ body{
     margin: 7px; padding: 15px;
     border-radius: 50px;
     letter-spacing: -.5px;
-    color: #fff;
+    color: var(--nav-white);
     &.active{
-      background: #fff;
-      color: #000;
+      background: var(--nav-white);
+      color: var(--nav-active-black);
     }
   }
 }

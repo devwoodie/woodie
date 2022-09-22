@@ -53,10 +53,16 @@ a{
 :root{
     --back-black: #1a1a1a;
     --back-white: #ffffff;
+    --nav-black: #000000;
+    --nav-white: #ffffff;
+    --nav-active-black: #000000;
 }
 .light:root{
     --back-black: #ffffff;
     --back-white: #1a1a1a;
+    --nav-black: rgba(211,211,211,0.5);
+    --nav-white: #000000;
+    --nav-active-black: #ffffff;
 }
 
 @font-face {
