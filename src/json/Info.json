@@ -3,31 +3,34 @@
     {
       "id" : 0,
       "title" : "Email.",
-      "cont" : "ehddl453@naver.com"
+      "content" : "ehddl453@naver.com"
     },
     {
       "id" : 1,
       "title" : "Birth.",
-      "cont" : "1995.11.18"
+      "content" : "1995.11.18"
     },
     {
       "id" : 2,
       "title" : "Residence.",
-      "cont" : "Gyeonggi-do, South Korea"
+      "content" : "Gyeonggi-do, South Korea"
     },
     {
       "id" : 3,
       "title" : "Bachelor Degree.",
-      "cont" : "Korea National Open Univ. Computer Science (2022.08 ~ )"
+      "content" : "Korea National Open Univ. Computer Science (2022.08 ~ )"
     }
   ],
   "career" : [
     {
-      "title" : "Samsung Welstory (2018.02 ~ 2021.03)",
-      "sub" : ""
+      "title" : "Samsung Welstory",
+      "sub" : "Group-Catering Chef",
+      "date" : "2018.02 ~ 2021.03"
     },
     {
-      "title" : "eMoney (2022.02 ~ )"
+      "title" : "eMoney",
+      "sub" : "Service Web Publishing",
+      "date" : "2022.02 ~ now"
     }
   ]
 }

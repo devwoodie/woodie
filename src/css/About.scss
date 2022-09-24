@@ -1,5 +1,6 @@
 .About{
   margin-top: 5rem;
+  //info tab
   .info{
     .info-list{
       font-size: 1.2rem;
@@ -16,6 +17,38 @@
         font-size: inherit;
         font-weight: 300;
       }
+    }
+  }
+  //career tab
+  .career{
+    margin-top: 100px;
+    .career-list{
+      font-size: 1.5rem;
+      margin-top: 20px;
+      width: 300px;
+      &:first-child{
+        margin: 0;
+      }
+      .career-title{
+        font-family: "BlackHanSans";
+        -webkit-text-stroke: 1px var(--back-white);
+        -webkit-text-fill-color: var(--back-black);
+        font-size: 5rem;
+      }
+      .career-tit{
+        font-size: inherit;
+        font-weight: 500;
+      }
+      .career-sub{
+        font-size: 1rem;
+        margin: 10px 0;
+      }
+      .career-date{
+        font-size: .8rem;
+        font-weight: 300;
+        text-align: right;
+      }
+      span{display: block;}
     }
   }
 }
