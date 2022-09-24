@@ -3,12 +3,14 @@ import '../css/About.scss';
 const About = ({ infoJson }) => {
 
     let infoData = infoJson.info;
-    let careerData = infoJson.career
+    let careerData = infoJson.careers;
+    let awardData = infoJson.awards;
 
     return(
         <div className="About">
+            <h2 className="about-tit">ABOUT<span className="me">ME</span></h2>
             <ul className="info">
-                <li className="info-list">
+                <li className="info-list info-title">
                     <span className="info-tit">Front-end Developer</span>
                 </li>
                 {infoData.map((info, index) => (
@@ -18,15 +20,27 @@ const About = ({ infoJson }) => {
                     </li>
                 ))}
             </ul>
-            <ul className="career">
-                <li className="career-list">
-                    <span className="career-title">Careers</span>
+            <ul className="contents">
+                <li className="contents-list">
+                    <span className="contents-title careers">Careers</span>
                 </li>
                 {careerData.map((career, index) => (
-                    <li className="career-list" key={index}>
-                        <span className="career-tit">{career.title}</span>
-                        <span className="career-sub">{career.sub}</span>
-                        <span className="career-date">{career.date}</span>
+                    <li className="contents-list" key={index}>
+                        <span className="contents-tit">{career.title}</span>
+                        <span className="contents-sub">{career.sub}</span>
+                        <span className="contents-date">{career.date}</span>
+                    </li>
+                ))}
+            </ul>
+            <ul className="contents">
+                <li className="contents-list">
+                    <span className="contents-title awards">Awards</span>
+                </li>
+                {awardData.map((award, index) => (
+                    <li className="contents-list" key={index}>
+                        {/*<span className="contents-tit">International Cooking Contest</span>*/}
+                        <span className="contents-sub">{award.title}</span>
+                        <span className="contents-date">{award.date}</span>
                     </li>
                 ))}
             </ul>

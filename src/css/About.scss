@@ -1,12 +1,45 @@
+//#d9fd00
+//rgb(255, 94, 94);
+@mixin gradient($left, $right, $color, $text) {
+  content: $text;
+  display: inline-block;
+  width: 100%;
+  -webkit-text-stroke: 1px $color;
+  position: absolute;
+  left: $left; top: $right;
+  z-index: -1;
+}
 .About{
   margin-top: 5rem;
+  .about-tit{
+    font-size: 10rem;
+    font-weight: 600;
+    -webkit-text-stroke: 1px var(--back-white);
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    .me{
+      display: block;
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      position: relative;
+      &::before{
+        //content: 'ME';
+        @include gradient(-5px, -5px, #d9fd00, 'ME');
+      }
+    }
+  }
   //info tab
   .info{
+    margin-top: -4rem;
     .info-list{
       font-size: 1.2rem;
       margin-top: 15px;
       &:first-child{
         margin: 0;
+      }
+      &.info-title{
+        font-size: 1.5rem;
       }
       .info-tit{
         font-size: inherit;
@@ -20,30 +53,37 @@
     }
   }
   //career tab
-  .career{
+  .contents{
     margin-top: 100px;
-    .career-list{
+    .contents-list{
       font-size: 1.5rem;
       margin-top: 20px;
       width: 300px;
       &:first-child{
         margin: 0;
       }
-      .career-title{
+      .contents-title{
         font-family: "BlackHanSans";
         -webkit-text-stroke: 1px var(--back-white);
-        -webkit-text-fill-color: var(--back-black);
+        -webkit-text-fill-color: transparent;
         font-size: 5rem;
+        position: relative;
+        &.careers::before{
+          @include gradient(-5px, -5px, #d9fd00, 'Careers');
+        }
+        &.awards::before{
+          @include gradient(-5px, -5px, #d9fd00, 'Awards');
+        }
       }
-      .career-tit{
+      .contents-tit{
         font-size: inherit;
         font-weight: 500;
       }
-      .career-sub{
+      .contents-sub{
         font-size: 1rem;
         margin: 10px 0;
       }
-      .career-date{
+      .contents-date{
         font-size: .8rem;
         font-weight: 300;
         text-align: right;

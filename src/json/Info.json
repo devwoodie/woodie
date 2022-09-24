@@ -21,7 +21,7 @@
       "content" : "Korea National Open Univ. Computer Science (2022.08 ~ )"
     }
   ],
-  "career" : [
+  "careers" : [
     {
       "title" : "Samsung Welstory",
       "sub" : "Group-Catering Chef",
@@ -31,6 +31,20 @@
       "title" : "eMoney",
       "sub" : "Service Web Publishing",
       "date" : "2022.02 ~ now"
+    }
+  ],
+  "awards" : [
+    {
+      "title" : "Minister of Health and Welfare Award",
+      "date" : "2017.05.22"
+    },
+    {
+      "title" :  "Cold Part : Gold Medal",
+      "date" : "2017.05.22"
+    },
+    {
+      "title" :  "Hot Part : Silver Medal",
+      "date" : "2017.05.22"
     }
   ]
 }
