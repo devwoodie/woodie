@@ -56,6 +56,7 @@ a{
     --nav-black: #000000;
     --nav-white: #ffffff;
     --nav-active-black: #000000;
+    --text-green: #d9fd00;
 }
 .light:root{
     --back-black: #ffffff;
@@ -63,6 +64,7 @@ a{
     --nav-black: rgba(211,211,211,0.5);
     --nav-white: #000000;
     --nav-active-black: #ffffff;
+    --text-green: rgb(100, 0, 255);
 }
 
 @font-face {

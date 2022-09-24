@@ -10,6 +10,11 @@ const About = ({ infoJson }) => {
         <div className="About">
             <h2 className="about-tit">ABOUT<span className="me">ME</span></h2>
             <ul className="info">
+                <nav className="info-nav">
+                    <a className="info-href" href="#">github</a>
+                    <a className="info-href" href="#">blog</a>
+                    <a className="info-href" href="#">resume</a>
+                </nav>
                 <li className="info-list info-title">
                     <span className="info-tit">Front-end Developer</span>
                 </li>
@@ -36,9 +41,9 @@ const About = ({ infoJson }) => {
                 <li className="contents-list">
                     <span className="contents-title awards">Awards</span>
                 </li>
+                <span className="contents-tit mrt">International Cooking Contest</span>
                 {awardData.map((award, index) => (
                     <li className="contents-list" key={index}>
-                        {/*<span className="contents-tit">International Cooking Contest</span>*/}
                         <span className="contents-sub">{award.title}</span>
                         <span className="contents-date">{award.date}</span>
                     </li>

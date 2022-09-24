@@ -24,14 +24,23 @@
       font-size: inherit;
       position: relative;
       &::before{
-        //content: 'ME';
-        @include gradient(-5px, -5px, #d9fd00, 'ME');
+        @include gradient(-5px, -5px, var(--text-green), 'ME');
       }
     }
   }
   //info tab
   .info{
-    margin-top: -4rem;
+    margin-top: -2rem;
+    .info-nav{
+      margin-bottom: 3rem;
+      .info-href{
+        margin-right: 20px;
+        color: var(--text-green);
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+    }
     .info-list{
       font-size: 1.2rem;
       margin-top: 15px;
@@ -52,9 +61,17 @@
       }
     }
   }
-  //career tab
+  //contents tab
   .contents{
     margin-top: 100px;
+    .contents-tit{
+      font-size: 1.5rem;
+      font-weight: 500;
+      &.mrt{
+        margin-top: 20px;
+        display: inline-block;
+      }
+    }
     .contents-list{
       font-size: 1.5rem;
       margin-top: 20px;
@@ -69,15 +86,11 @@
         font-size: 5rem;
         position: relative;
         &.careers::before{
-          @include gradient(-5px, -5px, #d9fd00, 'Careers');
+          @include gradient(-5px, -5px, var(--text-green), 'Careers');
         }
         &.awards::before{
-          @include gradient(-5px, -5px, #d9fd00, 'Awards');
+          @include gradient(-5px, -5px, var(--text-green), 'Awards');
         }
-      }
-      .contents-tit{
-        font-size: inherit;
-        font-weight: 500;
       }
       .contents-sub{
         font-size: 1rem;
