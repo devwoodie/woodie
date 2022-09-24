@@ -31,8 +31,11 @@
   //info tab
   .info{
     margin-top: -2rem;
+    position: relative;
     .info-nav{
       margin-bottom: 3rem;
+      position: absolute;
+      left: 0; top: -4rem;
       .info-href{
         margin-right: 20px;
         color: var(--text-green);

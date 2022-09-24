@@ -6,7 +6,7 @@ import About from "./About";
 import Contact from "./Contact";
 import { BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 import {useCallback, useState} from "react";
-import { Routes, Route, Link, useNavigate, outlet } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 const App = () => {
 

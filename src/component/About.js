@@ -1,4 +1,5 @@
 import '../css/About.scss';
+import { Routes, Link } from 'react-router-dom';
 
 const About = ({ infoJson }) => {
 
@@ -11,9 +12,9 @@ const About = ({ infoJson }) => {
             <h2 className="about-tit">ABOUT<span className="me">ME</span></h2>
             <ul className="info">
                 <nav className="info-nav">
-                    <a className="info-href" href="#">github</a>
-                    <a className="info-href" href="#">blog</a>
-                    <a className="info-href" href="#">resume</a>
+                    <Link className="info-href" target="_blank" to="//github.com/devwoodie">github</Link>
+                    <Link className="info-href" target="_blank" to="//velog.io/@woodie">blog</Link>
+                    <Link className="info-href" target="_blank" to="#">resume</Link>
                 </nav>
                 <li className="info-list info-title">
                     <span className="info-tit">Front-end Developer</span>
