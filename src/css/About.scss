@@ -1,14 +1,8 @@
+@import "./mixin";
+
 //#d9fd00
 //rgb(255, 94, 94);
-@mixin gradient($left, $right, $color, $text) {
-  content: $text;
-  display: inline-block;
-  width: 100%;
-  -webkit-text-stroke: 1px $color;
-  position: absolute;
-  left: $left; top: $right;
-  z-index: -1;
-}
+
 .About{
   margin-top: 5rem;
   .about-tit{
