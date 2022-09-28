@@ -6,6 +6,7 @@ const About = ({ infoJson }) => {
     let infoData = infoJson.info;
     let careerData = infoJson.careers;
     let awardData = infoJson.awards;
+    let abilityData = infoJson.ability;
 
     return(
         <div className="About">
@@ -23,6 +24,18 @@ const About = ({ infoJson }) => {
                     <li className="info-list" key={index}>
                         <span className="info-tit">{info.title}</span>
                         <span className="info-cont">{info.content}</span>
+                    </li>
+                ))}
+            </ul>
+            <ul className="contents">
+                <li className="contents-list">
+                    <span className="contents-title ability">Ability</span>
+                </li>
+                {abilityData.map((ability, index) => (
+                    <li className="contents-list" key={index}>
+                        <span className="contents-tit">{ability.title}</span>
+                        <span className="contents-sub bar"></span>
+                        <span className="contents-date">{ability.percent}</span>
                     </li>
                 ))}
             </ul>
@@ -50,16 +63,7 @@ const About = ({ infoJson }) => {
                     </li>
                 ))}
             </ul>
-            <ul className="contents">
-                <li className="contents-list">
-                    <span className="contents-title abilites">Abilites</span>
-                </li>
-                <li className="contents-list" >
-                    <span className="contents-tit">React</span>
-                    <span className="contents-sub bar"></span>
-                    <span className="contents-date">45%</span>
-                </li>
-            </ul>
+
         </div>
     )
 };

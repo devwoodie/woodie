@@ -91,13 +91,19 @@
         &.awards::before{
           @include gradient(-5px, -5px, var(--text-green), 'Awards');
         }
-        &.abilites::before{
-          @include gradient(-5px, -5px, var(--text-green), 'Abilites');
+        &.ability::before{
+          @include gradient(-5px, -5px, var(--text-green), 'Ability');
         }
       }
       .contents-sub{
         font-size: 1rem;
         margin: 10px 0;
+        &.bar{
+          width: 100%;
+          height: 10px;
+          border-radius: 5px;
+          border: 1px solid var(--back-white);
+        }
       }
       .contents-date{
         font-size: .8rem;

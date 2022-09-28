@@ -47,7 +47,7 @@
       "date" : "2017.05.22"
     }
   ],
-  "abilites" : [
+  "ability" : [
     {
       "title" : "React",
       "percent" : "80%"

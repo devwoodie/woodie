@@ -5,7 +5,7 @@ body{
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  @include scrollbars(12px, var(--text-green), var(--back-black))
+  @include scrollbars(.5vw, var(--text-green), var(--back-black))
 }
 .inner{
   padding: 0 6vw;
