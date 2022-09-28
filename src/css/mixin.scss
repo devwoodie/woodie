@@ -1,3 +1,4 @@
+//scrollbar custom
 @mixin scrollbars($size, $foreground-color, $background-color){
   &::-webkit-scrollbar{
     width: $size;
