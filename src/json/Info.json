@@ -46,5 +46,23 @@
       "title" : "Hot Part - Silver Medal",
       "date" : "2017.05.22"
     }
+  ],
+  "abilites" : [
+    {
+      "title" : "React",
+      "percent" : "80%"
+    },
+    {
+      "title" : "JavaScript",
+      "percent" : "80%"
+    },
+    {
+      "title" : "Scss/css",
+      "percent" : "80%"
+    },
+    {
+      "title" : "HTML",
+      "percent" : "90%"
+    }
   ]
 }

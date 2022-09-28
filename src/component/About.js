@@ -50,6 +50,16 @@ const About = ({ infoJson }) => {
                     </li>
                 ))}
             </ul>
+            <ul className="contents">
+                <li className="contents-list">
+                    <span className="contents-title abilites">Abilites</span>
+                </li>
+                <li className="contents-list" >
+                    <span className="contents-tit">React</span>
+                    <span className="contents-sub bar"></span>
+                    <span className="contents-date">45%</span>
+                </li>
+            </ul>
         </div>
     )
 };

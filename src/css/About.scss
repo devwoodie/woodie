@@ -91,6 +91,9 @@
         &.awards::before{
           @include gradient(-5px, -5px, var(--text-green), 'Awards');
         }
+        &.abilites::before{
+          @include gradient(-5px, -5px, var(--text-green), 'Abilites');
+        }
       }
       .contents-sub{
         font-size: 1rem;
