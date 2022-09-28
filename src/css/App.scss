@@ -1,8 +1,11 @@
+@import './mixin.scss';
+
 body{
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  @include scrollbars(12px, var(--text-green), var(--back-black))
 }
 .inner{
   padding: 0 6vw;

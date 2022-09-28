@@ -1,3 +1,16 @@
+@mixin scrollbars($size, $foreground-color, $background-color){
+  &::-webkit-scrollbar{
+    width: $size;
+    height: $size;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: $foreground-color;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track{
+    background: $background-color;
+  }
+}
 
 //겹치는 title
 @mixin gradient($left, $right, $color, $text) {
