@@ -4,7 +4,7 @@
 //rgb(255, 94, 94);
 
 .About{
-  margin-top: 5rem;
+  padding: 5rem 0;
   .about-tit{
     font-size: 10rem;
     font-weight: 600;
@@ -103,8 +103,19 @@
           height: 10px;
           border-radius: 5px;
           border: 1px solid var(--back-white);
+          .bar-inner{
+            height: 100%;
+            background: var(--back-white);
+            border-radius: inherit;
+          }
         }
       }
+      //ability percent
+      &:nth-of-type(2) .contents-sub.bar .bar-inner{width: 70%;} //react
+      &:nth-of-type(3) .contents-sub.bar .bar-inner{width: 70%;} //js
+      &:nth-of-type(4) .contents-sub.bar .bar-inner{width: 80%;} //scss
+      &:nth-of-type(5) .contents-sub.bar .bar-inner{width: 90%;} //html
+
       .contents-date{
         font-size: .8rem;
         font-weight: 300;
