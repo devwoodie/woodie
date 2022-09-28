@@ -30,7 +30,7 @@
   }
   //info tab
   .info{
-    margin-top: -2rem;
+    margin-top: -1rem;
     position: relative;
     .info-nav{
       margin-bottom: 3rem;
@@ -42,6 +42,9 @@
         cursor: pointer;
         font-size: 1.1rem;
         font-weight: 300;
+        &:hover{
+          color: rgb(255, 94, 94);;
+        }
       }
     }
     .info-list{

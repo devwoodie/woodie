@@ -1,11 +1,11 @@
 body{
   width: 100vw;
   height: 100vh;
-
-  //overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .inner{
-  padding: 0 4vw;
+  padding: 0 6vw;
 }
 .mode{
   position: fixed;
@@ -16,6 +16,7 @@ body{
   align-items: flex-start;
   cursor: pointer;
   color: var(--back-white);
+  z-index: 999;
   .mode-icon{
     font-size: 14px;
     margin-right: 5px;
