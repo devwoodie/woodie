@@ -1,0 +1,49 @@
+@import './mixin';
+
+.Contact{
+  padding: 7rem 0;
+  .top-text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 90%;
+    margin: 0 auto;
+    .hello{
+      font-size: inherit;
+      line-height: 1.2;
+    }
+    .will{
+      font-size: inherit;
+      margin-top: 1rem;
+    }
+    .bold-text{
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-align: center;
+      margin: 5rem 0;
+      line-height: 1.5;
+    }
+    .want{
+      font-size: inherit;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+  .contact-tit{
+    margin-top: 10rem;
+    font-size: 10rem;
+    font-weight: 600;
+    -webkit-text-stroke: 1px var(--back-white);
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    .me{
+      display: block;
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      position: relative;
+      &::before{
+        @include gradient(-5px, -5px, var(--text-green), 'ME');
+      }
+    }
+  }
+}
