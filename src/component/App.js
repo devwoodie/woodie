@@ -3,6 +3,7 @@ import '../css/App.scss';
 import infoJson from '../json/Info.json';
 import Intro from "./Intro";
 import About from "./About";
+import Project from "./Project";
 import Contact from "./Contact";
 import { BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 import {useCallback, useState} from "react";
@@ -43,7 +44,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Intro />}/>
                 <Route path="/about" element={<About infoJson={infoJson} />}/>
-                <Route path="/projects" element={<div>PROJECTS</div>}/>
+                <Route path="/projects" element={<Project />}/>
                 <Route path="/contact" element={<Contact />}/>
             </Routes>
 
