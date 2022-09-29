@@ -19,7 +19,7 @@
       font-size: 1.6rem;
       font-weight: 500;
       text-align: center;
-      margin: 5rem 0;
+      margin: 7rem 0;
       line-height: 1.5;
     }
     .want{
@@ -43,6 +43,23 @@
       position: relative;
       &::before{
         @include gradient(-5px, -5px, var(--text-green), 'ME');
+      }
+    }
+  }
+  .link-wrap{
+    margin: 5rem 0;
+    text-align: center;
+    .link-href{
+      margin: 0 5rem;
+      font-size: 3rem;
+      font-weight: 600;
+      -webkit-text-stroke: 1px var(--back-white);
+      -webkit-text-fill-color: transparent;
+      border-bottom: 1.5px solid transparent;
+      transition: .4s;
+      &:hover{
+        border-bottom: 1.5px solid rgb(255, 94, 94);
+        color: var(--text-green);
       }
     }
   }

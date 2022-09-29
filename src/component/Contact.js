@@ -1,4 +1,5 @@
 import '../css/Contact.scss';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return(
@@ -21,6 +22,11 @@ const Contact = () => {
                 </p>
             </div>
             <h2 className="contact-tit">CONTACT<span className="me">ME</span></h2>
+            <nav className="link-wrap">
+                <Link className="link-href" target="_blank" to="//github.com/devwoodie">github</Link>
+                <Link className="link-href" target="_blank" to="//velog.io/@woodie">blog</Link>
+                <Link className="link-href" target="_blank" to="#">resume</Link>
+            </nav>
         </div>
     )
 }
