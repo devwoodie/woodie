@@ -1,11 +1,11 @@
 @import './mixin';
 
 .Contact{
-  padding: 7rem 0;
+  padding: 12rem 0;
   .top-text{
     font-size: 1.5rem;
     font-weight: 300;
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
     .hello{
       font-size: inherit;
@@ -19,13 +19,13 @@
       font-size: 1.6rem;
       font-weight: 500;
       text-align: center;
-      margin: 7rem 0;
+      margin: 10rem 0;
       line-height: 1.5;
     }
     .want{
       font-size: inherit;
       line-height: 1.2;
-      text-align: center;
+      //text-align: center;
     }
   }
   .contact-tit{
@@ -47,7 +47,7 @@
     }
   }
   .link-wrap{
-    margin: 5rem 0;
+    margin: 10rem 0 3rem;
     text-align: center;
     .link-href{
       margin: 0 5rem;
@@ -59,7 +59,7 @@
       transition: .4s;
       &:hover{
         border-bottom: 1.5px solid rgb(255, 94, 94);
-        color: var(--text-green);
+        -webkit-text-stroke: 1px rgb(255, 94, 94);
       }
     }
   }
