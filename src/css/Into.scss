@@ -5,6 +5,7 @@
   font-family: "BlackHanSans";
   font-size: 10rem;
   color: var(--back-white);
+  animation: intro-woodie .6s ease;
 }
 .my-name{
   font-family: "BlackHanSans";
@@ -13,4 +14,14 @@
   font-size: 10rem;
   text-align: right;
   font-weight: 500;
+  animation: intro-name .6s ease;
+}
+
+@keyframes intro-name {
+  0%{transform: translateX(100%)}
+  100%{transform: translateX(0)}
+}
+@keyframes intro-woodie {
+  0%{transform: translateX(-100%)}
+  100%{transform: translateX(0)}
 }
