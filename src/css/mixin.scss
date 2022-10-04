@@ -24,7 +24,12 @@
   z-index: -1;
 }
 
-//ability percent
-@mixin abilityPercent($react){
-
+//animation
+@keyframes intro-right {
+  0%{transform: translateX(100%)}
+  100%{transform: translateX(0)}
+}
+@keyframes intro-left {
+  0%{transform: translateX(-100%)}
+  100%{transform: translateX(0)}
 }

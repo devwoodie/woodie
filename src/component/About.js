@@ -10,14 +10,18 @@ const About = ({ infoJson }) => {
     let abilityData = infoJson.ability;
 
     const itemRef = useRef(null);
+    const titRef = useRef(null);
 
     useEffect(() => {
         window.addEventListener('scroll', opacityOn);
+        window.addEventListener('scroll', titOpacity);
         return () => {
             window.removeEventListener('scroll', opacityOn);
+            window.removeEventListener('scroll', titOpacity);
         };
-    }, []);
+    }, [About]);
 
+    //contents opacity
     const opacityOn = () => {
         if(window.scrollY > 300){
             itemRef.current.classList.remove('opacity-off');
@@ -27,11 +31,19 @@ const About = ({ infoJson }) => {
             itemRef.current.classList.remove('opacity-on');
         }
     };
+    //About me opacity
+    const titOpacity = () => {
+        if(window.scrollY > 5){
+            titRef.current.classList.add('opacity-off');
+        }else{
+            titRef.current.classList.remove('opacity-off');
+        }
+    }
 
 
     return(
         <div className="About">
-            <h2 className="about-tit">ABOUT<span className="me">ME</span></h2>
+            <h2 ref={titRef} className="about-tit">ABOUT<span className="me">ME</span></h2>
             <ul className="info">
                 <nav className="info-nav">
                     <Link className="info-href" target="_blank" to="//github.com/devwoodie">github</Link>

@@ -8,11 +8,13 @@
 .About{
   padding: 5rem 0;
   .about-tit{
-    font-size: 10rem;
+    font-size: 12rem;
     font-weight: 600;
     -webkit-text-stroke: 1px var(--back-white);
     -webkit-text-fill-color: transparent;
     text-align: right;
+    animation: intro-right .6s ease;
+    transition: .4s;
     .me{
       display: block;
       font-family: inherit;
@@ -29,6 +31,7 @@
     margin-top: -1rem;
     position: sticky;
     top: 10rem;
+    animation: intro-left .6s ease;
     .info-nav{
       margin-bottom: 3rem;
       position: absolute;
@@ -149,3 +152,4 @@
     }
   }
 }
+
