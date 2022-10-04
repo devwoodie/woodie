@@ -9,28 +9,15 @@ const About = ({ infoJson }) => {
     let awardData = infoJson.awards;
     let abilityData = infoJson.ability;
 
-    const itemRef = useRef(null);
     const titRef = useRef(null);
 
     useEffect(() => {
-        window.addEventListener('scroll', opacityOn);
         window.addEventListener('scroll', titOpacity);
         return () => {
-            window.removeEventListener('scroll', opacityOn);
             window.removeEventListener('scroll', titOpacity);
         };
     }, [About]);
 
-    //contents opacity
-    const opacityOn = () => {
-        if(window.scrollY > 300){
-            itemRef.current.classList.remove('opacity-off');
-            itemRef.current.classList.add('opacity-on');
-        }else{
-            itemRef.current.classList.add('opacity-off');
-            itemRef.current.classList.remove('opacity-on');
-        }
-    };
     //About me opacity
     const titOpacity = () => {
         if(window.scrollY > 5){
@@ -61,7 +48,7 @@ const About = ({ infoJson }) => {
                 ))}
             </ul>
             <div className="content-wrap">
-                <ul ref={itemRef} className="cont1 contents opacity-off">
+                <ul className="cont1 contents">
                     <li className="contents-list">
                         <span className="contents-title ability">Ability</span>
                     </li>
