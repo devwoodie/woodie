@@ -75,11 +75,11 @@
     position: sticky;
     top: 25rem;
     transition: .4s;
+    animation: intro-left .6s ease;
     &.cont1{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-
     }
     &.cont2{
       display: flex;
