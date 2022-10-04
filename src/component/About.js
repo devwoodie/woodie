@@ -1,4 +1,5 @@
 import '../css/About.scss';
+import {useEffect, useRef} from "react";
 import { Routes, Link } from 'react-router-dom';
 
 const About = ({ infoJson }) => {
@@ -7,6 +8,26 @@ const About = ({ infoJson }) => {
     let careerData = infoJson.careers;
     let awardData = infoJson.awards;
     let abilityData = infoJson.ability;
+
+    const itemRef = useRef(null);
+
+    useEffect(() => {
+        window.addEventListener('scroll', opacityOn);
+        return () => {
+            window.removeEventListener('scroll', opacityOn);
+        };
+    }, []);
+
+    const opacityOn = () => {
+        if(window.scrollY > 300){
+            itemRef.current.classList.remove('opacity-off');
+            itemRef.current.classList.add('opacity-on');
+        }else{
+            itemRef.current.classList.add('opacity-off');
+            itemRef.current.classList.remove('opacity-on');
+        }
+    };
+
 
     return(
         <div className="About">
@@ -27,44 +48,46 @@ const About = ({ infoJson }) => {
                     </li>
                 ))}
             </ul>
-            <ul className="contents">
-                <li className="contents-list">
-                    <span className="contents-title ability">Ability</span>
-                </li>
-                {abilityData.map((ability, index) => (
-                    <li className="contents-list" key={index}>
-                        <span className="contents-tit">{ability.title}</span>
-                        <span className="contents-sub bar">
-                            <span className="bar-inner"></span>
-                        </span>
-                        <span className="contents-date">{ability.percent}</span>
+            <div className="content-wrap">
+                <ul ref={itemRef} className="cont1 contents opacity-off">
+                    <li className="contents-list">
+                        <span className="contents-title ability">Ability</span>
                     </li>
-                ))}
-            </ul>
-            <ul className="contents">
-                <li className="contents-list">
-                    <span className="contents-title careers">Careers</span>
-                </li>
-                {careerData.map((career, index) => (
-                    <li className="contents-list" key={index}>
-                        <span className="contents-tit">{career.title}</span>
-                        <span className="contents-sub">{career.sub}</span>
-                        <span className="contents-date">{career.date}</span>
+                    {abilityData.map((ability, index) => (
+                        <li className="contents-list" key={index}>
+                            <span className="contents-tit">{ability.title}</span>
+                            <span className="contents-sub bar">
+                        <span className="bar-inner"></span>
+                    </span>
+                            <span className="contents-date">{ability.percent}</span>
+                        </li>
+                    ))}
+                </ul>
+                <ul className="cont2 contents">
+                    <li className="contents-list">
+                        <span className="contents-title careers">Careers</span>
                     </li>
-                ))}
-            </ul>
-            <ul className="contents">
-                <li className="contents-list">
-                    <span className="contents-title awards">Awards</span>
-                </li>
-                <span className="contents-tit mrt">International Cooking Contest</span>
-                {awardData.map((award, index) => (
-                    <li className="contents-list" key={index}>
-                        <span className="contents-sub">{award.title}</span>
-                        <span className="contents-date">{award.date}</span>
+                    {careerData.map((career, index) => (
+                        <li className="contents-list" key={index}>
+                            <span className="contents-tit">{career.title}</span>
+                            <span className="contents-sub">{career.sub}</span>
+                            <span className="contents-date">{career.date}</span>
+                        </li>
+                    ))}
+                </ul>
+                <ul className="cont3 contents">
+                    <li className="contents-list">
+                        <span className="contents-title awards">Awards</span>
                     </li>
-                ))}
-            </ul>
+                    <span className="contents-tit mrt">International Cooking Contest</span>
+                    {awardData.map((award, index) => (
+                        <li className="contents-list" key={index}>
+                            <span className="contents-sub">{award.title}</span>
+                            <span className="contents-date">{award.date}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 };
