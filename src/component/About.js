@@ -56,8 +56,8 @@ const About = ({ infoJson }) => {
                         <li className="contents-list" key={index}>
                             <span className="contents-tit">{ability.title}</span>
                             <span className="contents-sub bar">
-                        <span className="bar-inner"></span>
-                    </span>
+                                <span className="bar-inner"></span>
+                            </span>
                             <span className="contents-date">{ability.percent}</span>
                         </li>
                     ))}
