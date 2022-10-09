@@ -8,7 +8,6 @@ const About = ({ infoJson }) => {
     let careerData = infoJson.careers;
     let awardData = infoJson.awards;
     let abilityData = infoJson.ability;
-
     const titRef = useRef(null);
 
     useEffect(() => {
