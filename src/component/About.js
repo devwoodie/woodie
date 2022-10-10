@@ -26,7 +26,6 @@ const About = ({ infoJson }) => {
         }
     }
 
-
     return(
         <div className="About">
             <h2 ref={titRef} className="about-tit">ABOUT<span className="me">ME</span></h2>
