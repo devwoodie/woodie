@@ -19,6 +19,7 @@ const About = ({ infoJson }) => {
 
     //About me opacity
     const titOpacity = () => {
+
         if(window.scrollY > 5){
             titRef.current.classList.add('opacity-off');
         }else{
