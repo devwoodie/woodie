@@ -1,6 +1,7 @@
 import '../css/Projects.scss';
 
-const Projects = () => {
+const Projects = ({ projectJson }) => {
+    console.log(projectJson)
     return(
         <div className="Project">
 

@@ -1,6 +1,7 @@
 import '../css/reset.css';
 import '../css/App.scss';
 import infoJson from '../json/Info.json';
+import projectJson from '../json/Project.json';
 import Intro from "./Intro";
 import About from "./About";
 import Projects from "./Projects";
@@ -44,7 +45,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Intro />}/>
                 <Route path="/about" element={<About infoJson={infoJson} />}/>
-                <Route path="/projects" element={<Projects />}/>
+                <Route path="/projects" element={<Projects projectJson={projectJson} />}/>
                 <Route path="/contact" element={<Contact />}/>
             </Routes>
 
