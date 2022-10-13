@@ -1,0 +1,81 @@
+{
+  "project" : [
+    {
+      "id": 0,
+      "title": "Woodie",
+      "sub": "Website v.1",
+      "type": "Portfolio",
+      "git": "woodie"
+    },
+    {
+      "id": 1,
+      "title": "Infcon-2022",
+      "sub": "Inflearn Offline Conference",
+      "type": "Concise Summary",
+      "git": "infcon-2022"
+    },
+    {
+      "id": 2,
+      "title": "The Hyundai Seoul",
+      "sub": "-",
+      "type": "Mobile Clone Project",
+      "git": "the-hyundai-seoul"
+    },
+    {
+      "id": 3,
+      "title": "Dino Game",
+      "sub": "Chrome Dino-Runner Game",
+      "type": "Study Project",
+      "git": "dino-game"
+    },
+    {
+      "id": 4,
+      "title": "Sungho",
+      "sub": "Sungho Electronics",
+      "type": "Web Clone Project",
+      "git": "sungho"
+    },
+    {
+      "id": 5,
+      "title": "Vint Deco",
+      "sub": "Responsive Vint Deco",
+      "type": "Renewal Project",
+      "git": "vint-deco"
+    },
+    {
+      "id": 6,
+      "title": "Tetris Game",
+      "sub": "Tetris Practice with JS",
+      "type": "Study Project",
+      "git": "tetris-game"
+    },
+    {
+      "id": 7,
+      "title": "React To Do App",
+      "sub": "Study Inflearn React Lecture",
+      "type": "Study Project",
+      "git": "react-to-do-app"
+    },
+    {
+      "id": 8,
+      "title": "React To Do List",
+      "sub": "Use React to Create to do List",
+      "type": "Study Project",
+      "git": "react-to-do-list"
+    },
+    {
+      "id": 9,
+      "title": "React Shop",
+      "sub": "Coding apple React Lecture",
+      "type": "Study Project",
+      "git": "react-shop"
+    },
+    {
+      "id": 10,
+      "title": "React Blog",
+      "sub": "Coding apple React Lecture",
+      "type": "Study Project",
+      "git": "react-shop"
+    }
+  ]
+}
