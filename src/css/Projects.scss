@@ -1,0 +1,45 @@
+@import "./mixin";
+
+//contents tab
+.Project{
+  margin-top: 100px;
+  .contents-head{
+    text-align: center;
+    .contents-title {
+      font-family: "BlackHanSans";
+      -webkit-text-stroke: 1px var(--back-white);
+      -webkit-text-fill-color: transparent;
+      font-size: 5rem;
+      position: relative;
+      &.projects::before {
+        @include gradient(-5px, -5px, var(--text-green), 'Projects');
+      }
+    }
+  }
+  .contents {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .contents-list {
+      font-size: 1.5rem;
+      margin: 30px 20px;
+      width: 300px;
+      span{
+        display: block;
+      }
+      .contents-tit {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      .contents-sub {
+        font-size: 1rem;
+        margin: 10px 0;
+      }
+      .contents-date{
+        font-size: .8rem;
+        font-weight: 300;
+        text-align: right;
+      }
+    }
+  }
+}
