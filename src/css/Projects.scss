@@ -2,28 +2,56 @@
 
 //contents tab
 .Project{
-  margin-top: 100px;
+  padding-top: 120px;
+  width: 60vw;
+  margin: 0 auto;
+  position: relative;
+  .back-title{
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%; top: 10%;
+    transform: translateX(-50%);
+    span{
+      font-family: "BlackHanSans";
+      opacity: .15;
+      font-size: 8rem;
+    }
+  }
   .contents-head{
     text-align: center;
     .contents-title {
-      font-family: "BlackHanSans";
-      -webkit-text-stroke: 1px var(--back-white);
-      -webkit-text-fill-color: transparent;
-      font-size: 5rem;
-      position: relative;
-      &.projects::before {
-        @include gradient(-5px, -5px, var(--text-green), 'Projects');
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        display: inline-block;
+        font-size: 5rem;
       }
     }
   }
   .contents {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10%;
+    margin-top: 50px;
     .contents-list {
       font-size: 1.5rem;
       margin: 30px 20px;
-      width: 300px;
+      width: 270px;
+      border-bottom: 1px solid transparent;
+      transition: .4s;
+      &:hover{
+        border-bottom: 1px solid rgb(255, 94, 94);
+        .contents-tit{
+          color: var(--text-green);
+        }
+        .contents-sub{
+          color: var(--text-green);
+        }
+      }
       span{
         display: block;
       }

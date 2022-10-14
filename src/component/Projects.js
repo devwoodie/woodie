@@ -6,8 +6,27 @@ const Projects = ({ projectJson }) => {
 
     return(
         <div className="Project">
+            <div className="back-title">
+                <span>P</span>
+                <span>R</span>
+                <span>O</span>
+                <span>J</span>
+                <span>E</span>
+                <span>C</span>
+                <span>T</span>
+                <span>S</span>
+            </div>
             <div className="contents-head">
-                <span className="contents-title projects">Projects</span>
+                <div className="contents-title">
+                    <span>P</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>J</span>
+                    <span>E</span>
+                    <span>C</span>
+                    <span>T</span>
+                    <span>S</span>
+                </div>
             </div>
             <ul className="contents">
                 {projectData.map((project, index) => (
