@@ -1,4 +1,5 @@
 import '../css/Projects.scss';
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 const Projects = ({ projectJson }) => {
 
@@ -28,17 +29,17 @@ const Projects = ({ projectJson }) => {
                     <span>S</span>
                 </div>
             </div>
-            <ul className="contents">
-                {projectData.map((project, index) => (
-                    <li className="contents-list" key={index}>
-                        <a target="_blank" href={'https://github.com/devwoodie/'+project.git}>
-                            <span className="contents-tit">{project.title}</span>
-                            <span className="contents-sub">{project.sub}</span>
-                            <span className="contents-date">{project.type}</span>
-                        </a>
-                    </li>
-                ))}
-            </ul>
+                <ul className="contents">
+                    {projectData.map((project, index) => (
+                        <li className="contents-list">
+                            <a target="_blank" href={'https://github.com/devwoodie/'+project.git}>
+                                <span className="contents-tit">{project.title}</span>
+                                <span className="contents-sub">{project.sub}</span>
+                                <span className="contents-date">{project.type}</span>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
         </div>
     )
 };
