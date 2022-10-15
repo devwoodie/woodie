@@ -4,7 +4,6 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 const Projects = ({ projectJson }) => {
 
     let projectData = projectJson.project;
-
     return(
         <div className="Project">
             <div className="back-title">
