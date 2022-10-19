@@ -1,9 +1,20 @@
 import '../css/Projects.scss';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import {useState} from "react";
 
 const Projects = ({ projectJson }) => {
 
-    let projectData = projectJson.project;
+    let [projectData, setProjectData] = useState(projectJson.project);
+
+    const handleEnd = (result) => {
+        if(!result.destination) return;
+
+        const newProjectData = [...projectData];
+
+        const [reorderProject] = newProjectData.splice(result.source.index, 1);
+        newProjectData.splice(result.destination.index, 0, reorderProject);
+        setProjectData(newProjectData);
+    };
 
     return(
         <div className="Project">
@@ -30,7 +41,7 @@ const Projects = ({ projectJson }) => {
                 </div>
             </div>
                 <div className="contents">
-                    <DragDropContext>
+                    <DragDropContext onDragEnd={handleEnd}>
                         <Droppable droppableId="projects">
                             {(provided) => (
                                 <div {...provided.droppableProps} ref={provided.innerRef}>
@@ -42,7 +53,7 @@ const Projects = ({ projectJson }) => {
                                     >
                                         {(provided, snapshot) => (
                                             <div
-                                                className="contents-list"
+                                                className={`${snapshot.isDragging ? 'dragging':''} contents-list`}
                                                 key={project.id}
                                                 {...provided.draggableProps}
                                                 ref={provided.innerRef}

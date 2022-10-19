@@ -40,9 +40,14 @@
     .contents-list {
       font-size: 1.5rem;
       margin: 30px 20px;
+      padding: 5px;
+      border-radius: 10px;
       width: 270px;
       border-bottom: 1px solid transparent;
       transition: .4s;
+      &.dragging{
+        background: rgba(119, 119, 119, 0.3);
+      }
       &:hover{
         border-bottom: 1px solid rgb(255, 94, 94);
         .contents-tit{
