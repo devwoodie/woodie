@@ -29,17 +29,40 @@ const Projects = ({ projectJson }) => {
                     <span>S</span>
                 </div>
             </div>
-                <ul className="contents">
-                    {projectData.map((project, index) => (
-                        <li className="contents-list">
-                            <a target="_blank" href={'https://github.com/devwoodie/'+project.git}>
-                                <span className="contents-tit">{project.title}</span>
-                                <span className="contents-sub">{project.sub}</span>
-                                <span className="contents-date">{project.type}</span>
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+                <div className="contents">
+                    <DragDropContext>
+                        <Droppable droppableId="projects">
+                            {(provided) => (
+                                <div {...provided.droppableProps} ref={provided.innerRef}>
+                                    {projectData.map((project, index) => (
+                                    <Draggable
+                                        key={project.id}
+                                        draggableId={project.id.toString()}
+                                        index={index}
+                                    >
+                                        {(provided, snapshot) => (
+                                            <div
+                                                className="contents-list"
+                                                key={project.id}
+                                                {...provided.draggableProps}
+                                                ref={provided.innerRef}
+                                                {...provided.dragHandleProps}
+                                            >
+                                                <a target="_blank" href={'https://github.com/devwoodie/'+project.git}>
+                                                    <span className="contents-tit">{project.title}</span>
+                                                    <span className="contents-sub">{project.sub}</span>
+                                                    <span className="contents-date">{project.type}</span>
+                                                </a>
+                                            </div>
+                                        )}
+                                    </Draggable>
+                                    ))}
+                                    {provided.placeholder}
+                                </div>
+                            )}
+                        </Droppable>
+                    </DragDropContext>
+                </div>
         </div>
     )
 };
