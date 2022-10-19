@@ -36,10 +36,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10%;
-    //display: flex;
-    //flex-wrap: wrap;
-    //justify-content: space-between;
-    //align-items: flex-start;
     margin-top: 50px;
     .contents-list {
       font-size: 1.5rem;
@@ -47,9 +43,9 @@
       padding: 5px;
       width: 270px;
       border-bottom: 1px solid transparent;
-      transition: .4s;
+      //transition: .4s;
       &.dragging{
-        background: rgba(119, 119, 119, 1);
+        background: rgba(61, 61, 61, 0.73);
         border-radius: 10px;
       }
       &:hover{
