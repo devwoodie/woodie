@@ -33,9 +33,13 @@
     }
   }
   .contents {
-    //display: grid;
-    //grid-template-columns: repeat(3, 1fr);
-    //grid-column-gap: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10%;
+    //display: flex;
+    //flex-wrap: wrap;
+    //justify-content: space-between;
+    //align-items: flex-start;
     margin-top: 50px;
     .contents-list {
       font-size: 1.5rem;
