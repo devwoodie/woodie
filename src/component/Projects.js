@@ -42,9 +42,9 @@ const Projects = ({ projectJson }) => {
             </div>
                 <div className="contents">
                     <DragDropContext onDragEnd={handleEnd}>
-                        <Droppable droppableId="projects">
+                        <Droppable droppableId="projects"  /*direction="horizontal"*/>
                             {(provided) => (
-                                <div {...provided.droppableProps} ref={provided.innerRef}>
+                                <div {...provided.droppableProps} ref={provided.innerRef} >
                                     {projectData.map((project, index) => (
                                     <Draggable
                                         key={project.id}
