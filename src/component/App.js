@@ -6,7 +6,7 @@ import Intro from "./Intro";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import { BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
+import { BsFillSunFill, BsFillMoonFill, BsThreeDots, BsCaretDownFill} from 'react-icons/bs'
 import {useCallback, useState} from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
@@ -84,7 +84,13 @@ const ContactKakao = () => {
     return(
         <div className="contactKakao">
             <div className="cont-off" onClick={setKakaoMode}>
-                <span className="material-symbols-outlined">more_horiz</span>
+                {contKakao ?
+                    <BsCaretDownFill className="cont-kakao-ic" /> :
+                    <BsThreeDots className="cont-kakao-ic" />
+                }
+            </div>
+            <div className="qr-area">
+
             </div>
         </div>
     )

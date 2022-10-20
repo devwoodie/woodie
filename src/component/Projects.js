@@ -1,5 +1,6 @@
 import '../css/Projects.scss';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { MdDragIndicator } from 'react-icons/md'
 import {useState} from "react";
 
 const Projects = ({ projectJson }) => {
@@ -63,7 +64,7 @@ const Projects = ({ projectJson }) => {
                                                     <span className="contents-tit">{project.title}</span>
                                                     <span className="contents-sub">{project.sub}</span>
                                                     <span className="contents-date">{project.type}</span>
-                                                    <span className="drag-indicator material-symbols-outlined">drag_indicator</span>
+                                                    <MdDragIndicator className="drag-indicator" />
                                                 </a>
                                             </div>
                                         )}
