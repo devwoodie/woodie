@@ -43,10 +43,14 @@
       padding: 5px;
       width: 270px;
       border-bottom: 1px solid transparent;
+      position: relative;
       //transition: .4s;
       &.dragging{
-        background: rgba(61, 61, 61, 0.73);
+        background: rgba(61, 61, 61, 0.57);
         border-radius: 10px;
+        .drag-indicator{
+          display: none;
+        }
       }
       &:hover{
         border-bottom: 1px solid rgb(255, 94, 94);
@@ -72,6 +76,13 @@
         font-size: .8rem;
         font-weight: 300;
         text-align: right;
+      }
+      .drag-indicator{
+        font-weight: 100;
+        position: absolute;
+        right: 0px; top: 0px;
+        font-size: 30px;
+        cursor: pointer;
       }
     }
   }

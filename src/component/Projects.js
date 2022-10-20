@@ -59,10 +59,11 @@ const Projects = ({ projectJson }) => {
                                                 ref={provided.innerRef}
                                                 {...provided.dragHandleProps}
                                             >
-                                                <a target="_blank" href={'https://github.com/devwoodie/'+project.git}>
+                                                <a target="_blank" href={`https://github.com/devwoodie/${project.git}`}>
                                                     <span className="contents-tit">{project.title}</span>
                                                     <span className="contents-sub">{project.sub}</span>
                                                     <span className="contents-date">{project.type}</span>
+                                                    <span className="drag-indicator material-symbols-outlined">drag_indicator</span>
                                                 </a>
                                             </div>
                                         )}
