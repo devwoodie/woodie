@@ -49,14 +49,45 @@ const App = () => {
                 <Route path="/contact" element={<Contact />}/>
             </Routes>
 
-            <ul className="nav-tab">
-                <li onClick={() => {navigate('/');setPageIndex(0);}} className={pageIndex === 0 ? 'tab active' : 'tab'}>INTRO</li>
-                <li onClick={() => {navigate('/about') ;setPageIndex(1);}} className={pageIndex === 1 ? 'tab active' : 'tab'}>ABOUT</li>
-                <li onClick={() => {navigate('/projects') ;setPageIndex(2);}} className={pageIndex === 2 ? 'tab active' : 'tab'}>PROJECTS</li>
-                <li onClick={() => {navigate('/contact') ;setPageIndex(3);}} className={pageIndex === 3 ? 'tab active' : 'tab'}>CONTACT</li>
-            </ul>
+            <NavTab navigate={navigate} setPageIndex={setPageIndex} pageIndex={pageIndex}/>
+
+            <ContactKakao  />
         </div>
     );
+}
+
+//navigate tab
+const NavTab = ({navigate, setPageIndex, pageIndex}) => {
+    return(
+        <ul className="nav-tab">
+            <li onClick={() => {navigate('/');setPageIndex(0);}} className={pageIndex === 0 ? 'tab active' : 'tab'}>INTRO</li>
+            <li onClick={() => {navigate('/about') ;setPageIndex(1);}} className={pageIndex === 1 ? 'tab active' : 'tab'}>ABOUT</li>
+            <li onClick={() => {navigate('/projects') ;setPageIndex(2);}} className={pageIndex === 2 ? 'tab active' : 'tab'}>PROJECTS</li>
+            <li onClick={() => {navigate('/contact') ;setPageIndex(3);}} className={pageIndex === 3 ? 'tab active' : 'tab'}>CONTACT</li>
+        </ul>
+    )
+}
+
+//kakao profile
+const ContactKakao = () => {
+
+    let [contKakao, setContKakao] = useState(false);
+
+    const setKakaoMode = useCallback(() => {
+        if(contKakao === false){
+            return setContKakao(true);
+        }else{
+            return setContKakao(false);
+        };
+    },[contKakao]);
+
+    return(
+        <div className="contactKakao">
+            <div className="cont-off" onClick={setKakaoMode}>
+                <span className="material-symbols-outlined">more_horiz</span>
+            </div>
+        </div>
+    )
 }
 
 export default App;
