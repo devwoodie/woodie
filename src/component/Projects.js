@@ -1,6 +1,6 @@
 import '../css/Projects.scss';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { MdDragIndicator } from 'react-icons/md'
+import { MdDragIndicator, MdDragHandle } from 'react-icons/md'
 import {useState} from "react";
 
 const Projects = ({ projectJson }) => {

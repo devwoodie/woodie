@@ -54,20 +54,49 @@ body{
 .contactKakao{
   position: fixed;
   right: 5rem; bottom: 2.5rem;
-  border: 1px solid #f00;
   .cont-off{
     background: var(--back-white);
-    width: 40px; height: 40px;
+    width: 50px; height: 50px;
     border-radius: 50%;
     position: relative;
     cursor: pointer;
+    z-index: 5;
+    &.animate{
+      animation: kakao-icon 5s forwards infinite ease-in-out;
+    }
     .cont-kakao-ic{
+      font-size: 20px;
       position: absolute;
       left: 50%; top: 50%;
       transform: translate(-50%, -50%);
       color: var(--back-black);
       animation: kakao-ic .4s forwards ease-in;
       path{color: inherit;}
+    }
+  }
+  .qr-area{
+    width: 150px; height: 200px;
+    background: var(--back-white);
+    position: absolute;
+    left: 50%; bottom: 25px;
+    transform: translateX(-50%);
+    z-index: 3;
+    border-radius: 10px;
+    padding: 10px;
+    animation: kakao-ic .4s forwards ease-in;
+    .qr-inner{
+      width: 100%;
+      padding: 5px;
+      border: 3px solid var(--back-black);
+      border-radius: 10px;
+      img{width: 100%}
+    }
+    .qr-text{
+      color: var(--back-black);
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      font-weight: 600;
     }
   }
 }

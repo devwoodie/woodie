@@ -37,3 +37,11 @@
   0%{opacity: 0}
   100%{opacity: 1}
 }
+@keyframes kakao-icon {
+  0%{transform: translateY(0);}
+  4%{transform: translateY(-80%);}
+  8%{transform: translateY(0);}
+  12%{transform: translateY(-80%);}
+  16%{transform: translateY(0);}
+  100%{transform: translateY(0);}
+}

@@ -83,15 +83,20 @@ const ContactKakao = () => {
 
     return(
         <div className="contactKakao">
-            <div className="cont-off" onClick={setKakaoMode}>
+            <div className={contKakao ? "cont-off" : "cont-off animate"} onClick={setKakaoMode}>
                 {contKakao ?
                     <BsCaretDownFill className="cont-kakao-ic" /> :
                     <BsThreeDots className="cont-kakao-ic" />
                 }
             </div>
-            <div className="qr-area">
-
-            </div>
+            {contKakao ?
+                <div className="qr-area">
+                    <div className="qr-inner">
+                        <img src={process.env.PUBLIC_URL+'./img/kakao-qr.jpg'}/>
+                    </div>
+                    <span className="qr-text">KAKAOTALK</span>
+                </div> : null
+            }
         </div>
     )
 }
