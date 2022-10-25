@@ -2,7 +2,7 @@
 
 //#d9fd00
 //rgb(255, 94, 94);
-.opacity-off{opacity: 0; transform: translateY(100%)}
+.opacity-off{opacity: 0; transform: translateY(100%)};
 .opacity-on{opacity: 1;}
 
 .About{
@@ -45,7 +45,7 @@
         font-size: 1.1rem;
         font-weight: 300;
         &:hover{
-          color: rgb(255, 94, 94);;
+          color: rgb(255, 94, 94);
         }
       }
     }
