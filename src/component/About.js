@@ -47,7 +47,7 @@ const About = ({ infoJson }) => {
                     <Link className="info-href" target="_blank" to="#">resume</Link>
                 </nav>
                 <li className="info-list info-title">
-                    <span className="info-tit">Front-end Developer</span>
+                    <span className="info-tit">Front-End Developer</span>
                 </li>
                 {infoData.map((info, index) => (
                     <li className="info-list" key={index}>
