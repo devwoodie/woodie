@@ -43,7 +43,7 @@ const Projects = ({ projectJson }) => {
             </div>
                 <div>
                     <DragDropContext onDragEnd={handleEnd}>
-                        <Droppable droppableId="projects"  /*direction="horizontal"*/>
+                        <Droppable droppableId="projects">
                             {(provided) => (
                                 <div {...provided.droppableProps} ref={provided.innerRef} className="contents">
                                     {projectData.map((project, index) => (
