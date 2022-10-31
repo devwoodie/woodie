@@ -8,6 +8,7 @@ const Projects = ({ projectJson }) => {
     let [projectData, setProjectData] = useState(projectJson.project);
 
     const handleEnd = (result) => {
+
         if(!result.destination) return;
 
         const newProjectData = [...projectData];
