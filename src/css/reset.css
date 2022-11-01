@@ -50,6 +50,7 @@ a{
     color: var(--back-white);
     font-family: "Montserrat";
 }
+/* font, bg color */
 :root{
     --back-black: #1a1a1a;
     --back-white: #ffffff;
@@ -67,6 +68,7 @@ a{
     --text-green: rgb(100, 0, 255);
 }
 
+/* font */
 @font-face {
     font-family: "BlackHanSans";
     src: url("../fonts/BlackHanSans-Regular.ttf");
