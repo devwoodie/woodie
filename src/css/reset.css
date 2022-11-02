@@ -50,6 +50,7 @@ a{
     color: var(--back-white);
     font-family: "Montserrat";
 }
+
 /* font, bg color */
 :root{
     --back-black: #1a1a1a;
