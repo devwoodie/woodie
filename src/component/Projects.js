@@ -4,6 +4,7 @@ import { MdDragIndicator, MdDragHandle } from 'react-icons/md'
 import {useState} from "react";
 
 const Projects = ({ projectJson }) => {
+
     let [projectData, setProjectData] = useState(projectJson.project);
 
     const handleEnd = (result) => {
