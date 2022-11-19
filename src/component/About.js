@@ -3,6 +3,7 @@ import {useEffect, useRef} from "react";
 import { Routes, Link } from 'react-router-dom';
 
 const About = ({ infoJson }) => {
+
     let infoData = infoJson.info;
     let careerData = infoJson.careers;
     let awardData = infoJson.awards;
