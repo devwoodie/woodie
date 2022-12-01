@@ -30,11 +30,11 @@ const About = ({ infoJson }) => {
     }
 
     const subOpacity = () => {
-        if(window.scrollY > 1400){
-            subRef.current.classList.add('opacity-off');
-        }else{
-            subRef.current.classList.remove('opacity-off');
-        }
+        // if(window.scrollY > 1400){
+        //     subRef.current.classList.add('opacity-off');
+        // }else{
+        //     subRef.current.classList.remove('opacity-off');
+        // }
     }
 
     return(
