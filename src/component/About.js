@@ -44,7 +44,7 @@ const About = ({ infoJson }) => {
                 <nav className="info-nav">
                     <Link className="info-href" target="_blank" to="//github.com/devwoodie">github</Link>
                     <Link className="info-href" target="_blank" to="//velog.io/@woodie">blog</Link>
-                    <Link className="info-href" target="_blank" to="#">resume</Link>
+                    <Link className="info-href" target="_blank" to="//spring-fang-155.notion.site/Tidy-Code-3b8fa188e4e34a95bd5b2299d7ff86bd">resume</Link>
                 </nav>
                 <li className="info-list info-title">
                     <span className="info-tit">Front-End Developer</span>
