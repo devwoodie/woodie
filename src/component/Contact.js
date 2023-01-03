@@ -4,27 +4,10 @@ import {useEffect, useRef} from "react";
 
 const Contact = () => {
 
-    const textRef1 = useRef(null);
-
-    useEffect(() => {
-        window.addEventListener('scroll', opacityText);
-        return() => {
-            window.removeEventListener('scroll', opacityText);
-        }
-    },[]);
-
-    const opacityText = () => {
-        if(window.scrollY > 10){
-            textRef1.current.classList.add('opacity-off');
-        }else{
-            textRef1.current.classList.remove('opacity-off');
-        }
-    };
-
     return(
         <div className="Contact">
             <div className="top-text">
-                <p ref={textRef1} className="hello">
+                <p className="hello">
                     Hello, my name is Yu Dongwoo.<br/>
                     I'm a junior developer who enjoys learning, growing and change to suit.
                 </p>
@@ -40,11 +23,10 @@ const Contact = () => {
                     Show you how to change according to the trend rather than staying in one place.
                 </p>
             </div>
-            <h2 className="contact-tit">CONTACT<span className="me">ME</span></h2>
             <nav className="link-wrap">
                 <Link className="link-href" target="_blank" to="//github.com/devwoodie">github</Link>
                 <Link className="link-href" target="_blank" to="//velog.io/@woodie">blog</Link>
-                <Link className="link-href" target="_blank" to="#">resume</Link>
+                <Link className="link-href" target="_blank" to="//spring-fang-155.notion.site/Tidy-Code-3b8fa188e4e34a95bd5b2299d7ff86bd">resume</Link>
             </nav>
         </div>
     )
