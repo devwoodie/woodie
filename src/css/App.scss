@@ -11,6 +11,27 @@ body{
 .inner{
   padding: 0 10vw;
 }
+.responsive-text{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10vw;
+  font-weight: bold;
+  line-height: 1.2;
+  span{
+    font-size: inherit;
+    display: block;
+    font-weight: inherit;
+    color: inherit;
+    &:nth-of-type(2){margin-left: 20px;}
+    &:nth-of-type(3){margin-left: 30px;}
+    &:nth-of-type(4){margin-left: 40px;}
+    &:nth-of-type(5){margin-left: 50px;}
+    //&:nth-of-type(6){margin-left: 40px;}
+  }
+}
 .mode{
   position: fixed;
   right: 2rem;
@@ -100,4 +121,15 @@ body{
       font-weight: 600;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .mode{display: none;}
+  .content{display: none;}
+  .nav-tab{display: none;}
+  .contactKakao{display: none;}
+  .responsive-text{display: block;}
+  .About{display: none;}
+  .Projects{display: none;}
+  .Contact{display: none;}
 }

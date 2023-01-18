@@ -30,6 +30,14 @@ const App = () => {
 
     return (
         <div className="App inner">
+            <div className="responsive-text">
+                <span>Checking</span>
+                <span>is not</span>
+                <span>possible</span>
+                <span>in a</span>
+                <span>Mobile</span>
+                <span>Environment.</span>
+            </div>
             <div className="mode" onClick={modeChange}>
                 { mode === true ?
                     <span>
