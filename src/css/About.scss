@@ -29,15 +29,10 @@
 
   //info tab
   .info{
-    margin-top: -1rem;
-    position: sticky;
-    top: 10rem;
-    //animation: intro-left .6s ease;
+    margin-top: -3rem;
     transition: .4s;
     .info-nav{
       margin-bottom: 3rem;
-      position: absolute;
-      left: 0; top: -4rem;
       .info-href{
         margin-right: 20px;
         color: var(--text-green);
@@ -69,30 +64,17 @@
       }
     }
   }
-
+  .content-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   //contents tab
   .contents{
     margin-top: 100px;
-    height: 28rem;
-    position: sticky;
-    top: 25rem;
     transition: .4s;
     animation: intro-left .6s ease;
-    &.cont1{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    &.cont2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &.cont3{
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-    }
+
     .contents-tit{
       font-size: 1.5rem;
       font-weight: 500;
