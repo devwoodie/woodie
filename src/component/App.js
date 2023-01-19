@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import { BsFillSunFill, BsFillMoonFill, BsThreeDots, BsCaretDownFill} from 'react-icons/bs'
 import {useCallback, useState} from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import qrImg from "../img/Kakao-qr.jpg";
 
 const App = () => {
 
@@ -100,7 +101,7 @@ const ContactKakao = () => {
             {contKakao ?
                 <div className="qr-area">
                     <div className="qr-inner">
-                        <img src={process.env.PUBLIC_URL+'/img/kakao-qr.jpg'} alt="kakao-qr"/>
+                        <img src={qrImg} alt="kakao-qr"/>
                     </div>
                     <span className="qr-text">KAKAOTALK</span>
                 </div> : null
