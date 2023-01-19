@@ -100,7 +100,7 @@ const ContactKakao = () => {
             {contKakao ?
                 <div className="qr-area">
                     <div className="qr-inner">
-                        <img src={process.env.PUBLIC_URL+'./img/kakao-qr.jpg'}/>
+                        <img src={process.env.PUBLIC_URL+'/img/kakao-qr.jpg'} alt="kakao-qr"/>
                     </div>
                     <span className="qr-text">KAKAOTALK</span>
                 </div> : null
