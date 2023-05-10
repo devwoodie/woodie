@@ -1,5 +1,5 @@
 ## Portfolio Page
-**📌[Go page!](https://devwoodie.github.io/)**
+**📌 [Go page!](https://devwoodie.github.io/)**
 
 <br/>
 
@@ -11,20 +11,50 @@
 
 **`Tech Stack`**
 
-**React**<br/>
-  -- create-react-app<br/>
-  -- react-router-dom<br/>
-  -- react-icons<br/>
-  -- react-beautiful-dnd<br/>
-  -- axios<br/>
-  <br/>
-**Scss**<br/>
-  -- Sass<br/>
-  <br/>
-**Server**<br/>
-  -- Github's power<br/>
+- React
+  - CRA
+  - Router
+  - Axios
+
+- Scss
+
+- Server
+  - Github page
+
 
 <br/>
+
+```
+src
+├── App.test.js
+├── component
+│   ├── About.js
+│   ├── App.js
+│   ├── Contact.js
+│   ├── Intro.js
+│   └── Projects.js
+├── css
+│   ├── About.scss
+│   ├── App.scss
+│   ├── Contact.scss
+│   ├── Into.scss
+│   ├── Projects.scss
+│   ├── mixin.scss
+│   └── reset.css
+├── fonts
+│   ├── BlackHanSans-Regular.ttf
+│   ├── Montserrat-Bold.ttf
+│   ├── Montserrat-Light.ttf
+│   ├── Montserrat-Medium.ttf
+│   ├── Montserrat-Regular.ttf
+│   └── Montserrat-Thin.ttf
+├── index.js
+├── json
+│   ├── Info.json
+│   └── Project.json
+├── reportWebVitals.js
+└── setupTests.js
+```
 
 **[main page]**
 ![image](https://user-images.githubusercontent.com/86578755/213095301-deeb2e0a-4ef7-4675-9eee-17e838383db1.png)
