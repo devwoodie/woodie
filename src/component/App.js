@@ -59,7 +59,7 @@ const App = () => {
 
             <NavTab navigate={navigate} setPageIndex={setPageIndex} pageIndex={pageIndex}/>
 
-            <ContactKakao  />
+            {/*<ContactKakao  />*/}
         </div>
     );
 }

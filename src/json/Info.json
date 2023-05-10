@@ -23,14 +23,19 @@
   ],
   "careers" : [
     {
-      "title" : "Samsung Welstory",
-      "sub" : "Group-Catering Chef",
-      "date" : "2018.02 ~ 2021.03"
+      "title" : "cedars",
+      "sub" : "Frontend Developer",
+      "date" : "2023.05 ~ now"
     },
     {
       "title" : "eMoney",
       "sub" : "Service Web Publishing",
-      "date" : "2022.02 ~ now"
+      "date" : "2022.02 ~ 2023.05"
+    },
+    {
+      "title" : "Samsung Welstory",
+      "sub" : "Group-Catering Chef",
+      "date" : "2018.02 ~ 2021.03"
     }
   ],
   "awards" : [

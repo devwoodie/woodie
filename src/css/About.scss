@@ -29,10 +29,11 @@
 
   //info tab
   .info{
-    margin-top: -3rem;
+    transform: translateY(-20%);
     transition: .4s;
     .info-nav{
       margin-bottom: 3rem;
+      z-index: 99;
       .info-href{
         margin-right: 20px;
         color: var(--text-green);

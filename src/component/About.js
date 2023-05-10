@@ -13,10 +13,8 @@ const About = ({ infoJson }) => {
 
     useEffect(() => {
         window.addEventListener('scroll', titOpacity);
-        window.addEventListener('scroll', subOpacity);
         return () => {
             window.removeEventListener('scroll', titOpacity);
-            window.removeEventListener('scroll', subOpacity);
         };
     }, [About]);
 
@@ -29,21 +27,13 @@ const About = ({ infoJson }) => {
         }
     }
 
-    const subOpacity = () => {
-        // if(window.scrollY > 1400){
-        //     subRef.current.classList.add('opacity-off');
-        // }else{
-        //     subRef.current.classList.remove('opacity-off');
-        // }
-    }
-
     return(
         <div className="About">
             <h2 ref={titRef} className="about-tit">ABOUT<span className="me">ME</span></h2>
             <ul className="info" ref={subRef}>
                 <nav className="info-nav">
                     <Link className="info-href" target="_blank" to="//github.com/devwoodie">github</Link>
-                    <Link className="info-href" target="_blank" to="//velog.io/@woodie">blog</Link>
+                    <Link className="info-href" target="_blank" to="//devwoodie.tistory.com/">blog</Link>
                     <Link className="info-href" target="_blank" to="//spring-fang-155.notion.site/Tidy-Code-3b8fa188e4e34a95bd5b2299d7ff86bd">resume</Link>
                 </nav>
                 <li className="info-list info-title">

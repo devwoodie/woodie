@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
             <nav className="link-wrap">
                 <Link className="link-href" target="_blank" to="//github.com/devwoodie">github</Link>
-                <Link className="link-href" target="_blank" to="//velog.io/@woodie">blog</Link>
+                <Link className="link-href" target="_blank" to="//devwoodie.tistory.com/">blog</Link>
                 <Link className="link-href" target="_blank" to="//spring-fang-155.notion.site/Tidy-Code-3b8fa188e4e34a95bd5b2299d7ff86bd">resume</Link>
             </nav>
         </div>
